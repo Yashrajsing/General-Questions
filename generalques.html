@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Gen Questions</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pacifico&display=swap');
+        
+        
+        h2{
+
+            text-align: center;
+            color: rgb(30, 116, 4);
+            padding: 15px;
+            padding-top: 30px;
+            font-size: 30px;
+
+        }
+        h2:hover{
+            color: rgb(98, 192, 4);
+        }
+        #main{
+            width:900px;
+            height: 55vh;
+            box-shadow: 0 0 10px black;
+            margin:150px auto;
+            background-color:rgb(238, 235, 230); 
+            border-radius: 30px;
+        }
+        #div1{
+            display: block;
+            background-color: white;
+            height: 30px;
+            width:500px;
+            box-shadow: 0 0 10px black;
+            margin:50px auto;
+            border-radius: 10px;
+
+        }
+        #div2{
+            display: block;
+            background-color: white;
+            height: 30px;
+            width:500px;
+            box-shadow: 0 0 10px black;
+            margin:50px auto;
+            border-radius: 10px;
+
+        }
+        #div3{
+            display: block;
+            background-color: white;
+            height: 30px;
+            width:500px;
+            box-shadow: 0 0 10px black;
+            margin:50px auto;
+            border-radius: 10px;
+            
+
+        }
+        
+        #S1{
+            margin-right: 40px;
+            margin-left: 30px;
+            font-size: 20px;
+            
+        }
+        #S1:hover,#S2:hover,#S3:hover{
+            color: rgb(228, 19, 19);
+            text-decoration: underline;
+        }
+        #S2{
+            margin-right: 100px;
+            margin-left: 30px;
+            font-size: 20px;
+            
+        }
+        #S3{
+            margin-right: 80px;
+            margin-left: 30px;
+            font-size: 20px;
+            
+        }
+        #i1,#i2,#i3{
+            font-size: 25px;
+        }
+        body{
+             background-image: url("https://images.unsplash.com/photo-1508968419-73cca394e8aa?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80"); 
+             background-repeat: no-repeat;
+             background-size: cover;
+            }
+    </style>
+</head>
+<body> <div id="main">   <h2>General Questions (Click the plus once to agree and click Twice to disagree)</h2>
+                            
+    <div id="div1"><span id="S1">Do You Accept All Major Credit Cards?</span><span onclick="fun1()" ondblclick="d1()" id="s1" class="material-icons">add_box</span><span id="i1"></span></div>
+        
+        
+    <div id="div2"><Span id=S2>Do You Support Local Farmers?</Span><span onclick="fun2()" ondblclick="d2()" id="s2" class="material-icons">add_box</span><span id="i2"></span></div>
+    <div id="div3" style="margin-bottom: 50px;"><Span id=S3>Do You Use Oraganic Ingredients?</Span><span onclick="fun3()" ondblclick="d3()" id="s3" class="material-icons">add_box</span><span id="i3"></span></div>
+</div>
+<script>
+    var SS1=document.getElementById('i1');
+    var SS2=document.getElementById('i2');
+    var SS3=document.getElementById('i3');
+    function fun1() {
+        i1.style.color="red";
+        i1.innerText="YES";
+        
+    }
+   
+    function fun2() {
+        i2.style.color="blue";
+        
+        i2.innerText="YES";
+       
+        
+    }
+    function fun3() {
+        i3.style.color="green";
+        
+        i3.innerText="YES";
+        
+    }
+    function d1(){
+        i1.style.color="green";
+        i1.innerText="NO";
+
+    }
+    function d2(){
+        i2.style.color="blue";
+        i2.innerText="NO";
+
+    }
+    function d3(){
+        i3.style.color="red";
+        i3.innerText="NO";
+         
+    }
+
+</script>
+    
+</body>
+</html>
